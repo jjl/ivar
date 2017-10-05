@@ -56,6 +56,6 @@ defmodule IvarTest.Body do
     |> Files.put({"test", "", "test.jpg", "jpg"})
     |> Body.put(data, :json)
     
-    assert result == {:error, "Body must be of type :url_encoded when files are attached"}
+    assert result == {:error, "Body must be of type :url_encoded or :multipart when files are attached"}
   end
 end
