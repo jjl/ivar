@@ -130,7 +130,7 @@ defmodule Ivar do
     
   Usages
   
-      Ivar.delete("https://example.com", [timeout: 10_000])
+      Ivar.options("https://example.com", [timeout: 10_000])
       %{method: :options, url: "https://example.com", opts: [timeout: 10_000]}
   """
   @spec options(binary, Keyword.t) :: map
